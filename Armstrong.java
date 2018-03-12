@@ -1,3 +1,4 @@
+//To find the Armstrong of an number
 import java.io.*;
 import java.util.*;
 
@@ -6,7 +7,7 @@ class Armstrong{
 
     Scanner s = new Scanner(System.in);
     int ch=0;
-    
+
     do{
     int num=0,sum=0;
 
