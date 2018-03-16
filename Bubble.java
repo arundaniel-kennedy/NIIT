@@ -23,16 +23,16 @@ class Bubble{
 
       //Sorting Begins
 
-      for ( i=0 ; i<n ; i++ ) {
-        for ( j=i ; j<n-1 ; j++ ) {
-          if(a[j]>a[j+1]){
-            int temp = a[j];
-            a[j] = a[j+1];
-            a[j+1] = temp;
-          }
-        }
+      for (int i = 0; i < n-1; i++)
+              for (int j = 0; j < n-i-1; j++)
+                  if (arr[j] > arr[j+1])
+                  {
+                      // swap temp and arr[i]
+                      int temp = arr[j];
+                      arr[j] = arr[j+1];
+                      arr[j+1] = temp;
+                  }
       }
-
       System.out.println("\nThe Sorted Array is::");
       for(i=0;i<n;i++){
         System.out.println(a[i]);
